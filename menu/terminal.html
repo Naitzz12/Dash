@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainTen-Web | Terminal</title>
+    <link rel="stylesheet" href="./terminal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../node_modules/xterm/css/xterm.css" />
+    <script src="../node_modules/xterm/lib/xterm.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8841f23fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="menu-bar">
+          <div class="bar">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h3><i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <a href="../index.html"><strong>MainTen-Web</strong></a>
+      </header>
+      <nav>
+        <div class="profile">
+          <h4><i class="fa-solid fa-user"></i> Naitzz</h4>
+          <img src="../assets/user1.png" alt="" />
+          <div class="p-text">
+            <p><i class="fa-solid fa-envelope"></i> naitzzb@gmail.com</p>
+            <p><i class="fa-solid fa-id-badge"></i> 098791234</p>
+          </div>
+        </div>
+        <ul>
+          <li><a href="./terminal.html">TERMINAL</a></li>
+          <li><a href="./stats.html">STATS</a></li>
+          <li><a href="">SERVER</a></li>
+          <li><a href="">UPTIME</a></li>
+          <li><a href="">NODE</a></li>
+          <li><a href="">SETTINGS</a></li>
+          <li><a href="">STORAGE</a></li>
+        </ul>
+        <div class="date">
+          <h4>Sabtu 24 / 02 / 2024</h4>
+          <img src="../assets/weather1.png" alt="" />
+          <p>13 : 25 : 50</p>
+        </div>
+      </nav>
+      <div id="terminal"></div>
+      <footer>
+        <p>Created By &copy; NaItzz | 2022 - 2024</p>
+      </footer>
+    </div>
+    <script src="./terminal.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const terminalContainer = document.getElementById("terminal");
+        const term = new Terminal({
+          cursorBlink: true,
+        });
+
+        term.open(terminalContainer);
+        term.write("node1/MainTen-Web# ");
+
+        term.onData((data) => {
+          console.log(data);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainTen-Web</title>
+    <link rel="website icon" type="png" href="./assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8841f23fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="menu-bar">
+          <div class="bar">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h3><i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <a href="./index.html"><strong>MainTen-Web</strong></a>
+      </header>
+      <nav>
+        <div class="profile">
+          <h4><i class="fa-solid fa-user"></i> Naitzz</h4>
+          <img src="./assets/user1.png" alt="" />
+          <div class="p-text">
+            <p><i class="fa-solid fa-envelope"></i> naitzzb@gmail.com</p>
+            <p><i class="fa-solid fa-id-badge"></i> 098791234</p>
+          </div>
+        </div>
+        <ul>
+          <li><a href="./menu/terminal.html">TERMINAL</a></li>
+          <li><a href="./menu/stats.html">STATS</a></li>
+          <li><a href="">SERVER</a></li>
+          <li><a href="">UPTIME</a></li>
+          <li><a href="">NODE</a></li>
+          <li><a href="">SETTINGS</a></li>
+          <li><a href="">STORAGE</a></li>
+        </ul>
+        <div class="date">
+          <h4>Sabtu 24 / 02 / 2024</h4>
+          <img src="./assets/weather1.png" alt="" />
+          <p>13 : 25 : 50</p>
+        </div>
+      </nav>
+      <div class="dash-1">
+        <div class="info">
+          <h1>Monitorin Server Mu Dan Lakukan Maintenance</h1>
+          <p>
+            Server merupakan perangkat keras yang harus terus dijaga
+            kestabilanya agar cara kerja nya tetap maksimal saat server itu di
+            hidupkan dan dioperasikan sedemikian rupa..
+          </p>
+        </div>
+        <div class="card-hardware">
+          <p class="chP"><i class="fa-solid fa-plus"></i></p>
+          <p class="line"></p>
+          <div class="ch-list">
+            <div class="ch-1">
+              <h2>Node 1</h2>
+              <div class="ch-info">
+                <p><i class="fa-solid fa-microchip"></i> 800%</p>
+                <p><i class="fa-solid fa-memory"></i> 64 GB</p>
+                <p><i class="fa-solid fa-hard-drive"></i> 25 TB</p>
+              </div>
+            </div>
+            <div class="ch-1 ch_image">
+              <h2>Node 2</h2>
+              <div class="ch-info">
+                <p><i class="fa-solid fa-microchip"></i> 800%</p>
+                <p><i class="fa-solid fa-memory"></i> 128 GB</p>
+                <p><i class="fa-solid fa-hard-drive"></i> 150 TB</p>
+              </div>
+            </div>
+            <div class="ch-1 ch_image1">
+              <h2>Node 3</h2>
+              <div class="ch-info">
+                <p><i class="fa-solid fa-microchip"></i> 800%</p>
+                <p><i class="fa-solid fa-memory"></i> 30 GB</p>
+                <p><i class="fa-solid fa-hard-drive"></i> 60 TB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Show Menu When You Click A + -->
+          <div class="sign-card">
+            <h2 class="close-card"><i class="fa-solid fa-xmark"></i></h2>
+            <div class="img-card">
+              <img src="./assets/logo.png" alt="" />
+              <h1>CREATE NEW SERVER</h1>
+            </div>
+            <div class="sc-list">
+              <div class="scl-1">
+                <div class="name-server">
+                  <p>Nama Server</p>
+                  <input type="text" />
+                </div>
+                <div class="ip-address">
+                  <p>IP Addres</p>
+                  <input type="text" name="ip" id="" />
+                </div>
+                <div class="port">
+                  <p>Port</p>
+                  <input type="text" name="port" id="" />
+                </div>
+                <div class="owner">
+                  <p>Owner</p>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="tag-server">
+                <h3>Tag</h3>
+                <form class="ts-list">
+                  <input type="checkbox" name="Server" id="" value="Server" />
+                  <label for="">Server</label><br />
+                  <input type="checkbox" name="Server" id="" value="Database" />
+                  <label for="">Database Server</label><br />
+                  <input
+                    type="checkbox"
+                    name="Server"
+                    id=""
+                    value="Storage Server"
+                  />
+                  <label for="">Storage Server</label><br />
+                  <input
+                    type="checkbox"
+                    name="Server"
+                    id=""
+                    value="Game Server"
+                  />
+                  <label for="">Game Server</label><br />
+                  <input
+                    type="checkbox"
+                    name="Server"
+                    id=""
+                    value="Private Server"
+                  />
+                  <label for="">Private Server</label><br />
+                  <input
+                    type="checkbox"
+                    name="Server"
+                    id=""
+                    value="Public Server"
+                  />
+                  <label for="">Public Server</label>
+                </form>
+              </div>
+              <input type="submit" value="Create" class="create-sub" />
+            </div>
+          </div>
+          <!-- Show Menu When You Click A + -->
+        </div>
+      </div>
+      <div class="storage-list">
+        <div class="sl-1">
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 2 : NODE 3</h1>
+              <p>50000GB</p>
+            </div>
+          </div>
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 3</h1>
+              <p>3000GB</p>
+            </div>
+          </div>
+        </div>
+        <div class="sl-2">
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 2 : NODE 2</h1>
+              <p>10000GB</p>
+            </div>
+          </div>
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 3 : NODE 2</h1>
+              <p>60000GB</p>
+            </div>
+          </div>
+        </div>
+        <div class="sl-3">
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 2</h1>
+              <p>20000GB</p>
+            </div>
+          </div>
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 1</h1>
+              <p>1000GB</p>
+            </div>
+          </div>
+        </div>
+        <div class="sl-3">
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 2</h1>
+              <p>20000GB</p>
+            </div>
+          </div>
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 1</h1>
+              <p>1000GB</p>
+            </div>
+          </div>
+        </div>
+        <div class="sl-3">
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 2</h1>
+              <p>20000GB</p>
+            </div>
+          </div>
+          <div class="storage">
+            <h2><i class="fa-solid fa-hard-drive"></i></h2>
+            <div class="s-info">
+              <h1>DISK 1 : NODE 1</h1>
+              <p>1000GB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dash2">
+        <div id="container" style="width: 570px; height: 400px"></div>
+        <div class="card-review">
+          <div class="cr-list1">
+            <div class="cr-1">
+              <img src="" alt="" />
+              <div class="cr-text">
+                <h2>M. Adbul Rohman</h2>
+                <p>
+                  Web Panel ini sangat membantu saya dalam melakukan Maintenance
+                  di server saya
+                </p>
+                <ul class="cr-link">
+                  <p href=""><i class="fa-regular fa-thumbs-up"></i></p>
+                  <p href=""><i class="fa-regular fa-thumbs-down"></i></p>
+                  <p href=""><i class="fa-regular fa-comment"></i></p>
+                  <p href=""><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                </ul>
+              </div>
+            </div>
+            <div class="cr-1">
+              <img src="" alt="" />
+              <div class="cr-text">
+                <h2>Rizal Pamungkas</h2>
+                <p>
+                  Panel nya cukup mudah untuk digunakan di saya, dan mudah untuk
+                  di hubungkan dengan server kita dirumah, sekarang saya bisa
+                  mengakses server saya di luar
+                </p>
+                <ul class="cr-link">
+                  <p href=""><i class="fa-regular fa-thumbs-up"></i></p>
+                  <p href=""><i class="fa-regular fa-thumbs-down"></i></p>
+                  <p href=""><i class="fa-regular fa-comment"></i></p>
+                  <p href=""><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cr-list2">
+            <div class="cr-1">
+              <img src="" alt="" />
+              <div class="cr-text">
+                <h2>Asep Suprayatno</h2>
+                <p>
+                  Untuk panel nya sudah bagus tapi CS nya agak susah dihubungi
+                  dan slow Respon juga
+                </p>
+                <ul class="cr-link">
+                  <p href=""><i class="fa-regular fa-thumbs-up"></i></p>
+                  <p href=""><i class="fa-regular fa-thumbs-down"></i></p>
+                  <p href=""><i class="fa-regular fa-comment"></i></p>
+                  <p href=""><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                </ul>
+              </div>
+            </div>
+            <div class="cr-1">
+              <img src="" alt="" />
+              <div class="cr-text">
+                <h2>Desta Mulyani</h2>
+                <p>
+                  Aku suka dengan desain nya tapi sayang gak ada tema gelap,
+                  jadi agak gak nyaman semoga up selanjutnya bisa ditambahkan
+                  fitur tema gelap
+                </p>
+                <ul class="cr-link">
+                  <p href=""><i class="fa-regular fa-thumbs-up"></i></p>
+                  <p href=""><i class="fa-regular fa-thumbs-down"></i></p>
+                  <p href=""><i class="fa-regular fa-comment"></i></p>
+                  <p href=""><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Created By &copy; NaItzz | 2022 - 2024</p>
+      </footer>
+    </div>
+
+    <script src="./index.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const chart = Highcharts.chart("container", {
+          chart: {
+            type: "bar",
+          },
+          title: {
+            text: "Rating Total",
+          },
+          xAxis: {
+            categories: ["RAM", "CPU", "Storage"],
+          },
+          yAxis: {
+            title: {
+              text: "Fruit eaten",
+            },
+          },
+          series: [
+            {
+              name: "Node 1",
+              data: [1, 0, 4],
+            },
+            {
+              name: "Node 2",
+              data: [5, 9, 3],
+            },
+            {
+              name: "Node 3",
+              data: [4, 7, 2],
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
