@@ -26,4 +26,4 @@ This Project Uses:
 - Chart.JS
 - Xterm
 
-[ ⚠️Warning ] This Web Dashboard is only for desktop, does not support Android devices
+[ ⚠️Warning ] This Web Dashboard is only for desktop, does not support Android devices | Only uses Indonesian [other languages ​​will be supported soon]
