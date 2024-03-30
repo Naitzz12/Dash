@@ -1,4 +1,4 @@
-# Mainten-Web
+## Mainten-Web
 
 Web Maintenance is a Web Panel / Dashboard for Server Monitoring
 
@@ -15,3 +15,15 @@ Web Maintenance is a Web Panel / Dashboard for Server Monitoring
 - Settings
 - Themes (coming soon)
 - ETC
+
+## Used By
+
+This Project Uses:
+
+- HTML
+- CSS
+- JS
+- Chart.JS
+- Xterm
+
+[ ⚠️Warning ] This Web Dashboard is only for desktop, does not support Android devices
