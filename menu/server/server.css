@@ -285,6 +285,10 @@ nav a {
   gap: 12px;
 }
 
+.node-info h4 {
+  font-family: var(--font-4);
+}
+
 .ni-list {
   display: flex;
   justify-content: center;
