@@ -221,3 +221,29 @@ nav a {
   flex-direction: column;
   font-family: var(--font-3);
 }
+
+.server-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.os_2 {
+  display: none;
+}
+
+.akun-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.akun-settings img {
+  width: 140px;
+}
+
+.akun-settings h3 {
+  font-family: var(--font-2);
+}
