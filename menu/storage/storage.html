@@ -56,7 +56,7 @@
           <li><a href="../terminal/terminal.html">TERMINAL</a></li>
           <li><a href="../stats/stats.html">STATS</a></li>
           <li><a href="../server/server.html">SERVER</a></li>
-          <li><a href="./settings.html">SETTINGS</a></li>
+          <li><a href="../settings/settings.html">SETTINGS</a></li>
           <li><a href="../storage/storage.html">STORAGE</a></li>
         </ul>
         <div class="date">
@@ -187,12 +187,124 @@
             </div>
           </div>
         </div>
-        <div class="s-info-storage"></div>
+        <div class="s-info-storage">
+          <div class="infostorage">
+            <div id="info-s1"></div>
+          </div>
+          <div class="infostorage">
+            <div id="info-s2"></div>
+          </div>
+          <div class="infostorage">
+            <div id="info-s3"></div>
+          </div>
+        </div>
       </div>
       <footer>
         <p>Created By &copy; NaItzz | 2022 - 2024</p>
       </footer>
     </div>
     <script src="./storage.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const chart = Highcharts.chart("info-s1", {
+          chart: {
+            type: "areaspline",
+          },
+          title: {
+            text: "HDD Server 1",
+          },
+          xAxis: {
+            categories: ["Tahun Ini", "Bulan Ini", "Minggu Ini", "Hari Ini"],
+          },
+          yAxis: {
+            title: {
+              text: "Rating Pengguna Panel",
+            },
+          },
+          series: [
+            {
+              name: "Disk 1",
+              data: [1, 0, 4, 5],
+            },
+            {
+              name: "Disk 2",
+              data: [3, 6, 3, 7],
+            },
+            {
+              name: "Disk 3",
+              data: [4, 7, 2, 4],
+            },
+          ],
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const chart = Highcharts.chart("info-s2", {
+          chart: {
+            type: "areaspline",
+          },
+          title: {
+            text: "HDD Server 2",
+          },
+          xAxis: {
+            categories: ["Tahun Ini", "Bulan Ini", "Minggu Ini", "Hari Ini"],
+          },
+          yAxis: {
+            title: {
+              text: "Rating Pengguna Panel",
+            },
+          },
+          series: [
+            {
+              name: "Disk 1",
+              data: [1, 0, 4, 5],
+            },
+            {
+              name: "Disk 2",
+              data: [3, 6, 3, 7],
+            },
+            {
+              name: "Disk 3",
+              data: [4, 7, 2, 4],
+            },
+          ],
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const chart = Highcharts.chart("info-s3", {
+          chart: {
+            type: "areaspline",
+          },
+          title: {
+            text: "HDD Server 3",
+          },
+          xAxis: {
+            categories: ["Tahun Ini", "Bulan Ini", "Minggu Ini", "Hari Ini"],
+          },
+          yAxis: {
+            title: {
+              text: "Rating Pengguna Panel",
+            },
+          },
+          series: [
+            {
+              name: "Disk 1",
+              data: [1, 0, 4, 5],
+            },
+            {
+              name: "Disk 2",
+              data: [3, 6, 3, 7],
+            },
+            {
+              name: "Disk 3",
+              data: [4, 7, 2, 4],
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

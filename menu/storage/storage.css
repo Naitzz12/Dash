@@ -275,6 +275,71 @@ nav a {
   font-family: var(--font-4);
 }
 
+#storage-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.s-info-server {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.s1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.s1 p {
+  font-size: 30px;
+  background-color: var(--col-1);
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--col-3);
+}
+
+.s1-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: var(--col-3);
+  padding: 10px 20px;
+  gap: 10px;border-radius: 15px;
+}
+
+.s1-text h4 {
+  font-family: var(--font-2);
+}
+
+.s1-text i {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.s1-text p {
+  background-color: var(--col-3);
+  padding: 0;
+}
+
+.s-info-storage {
+flex: .85;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#info-s1, #info-s2, #info-s3 {
+  width: 900px;
+}
+
 footer p {
   font-weight: 100;
   font-family: var(--font-4);
