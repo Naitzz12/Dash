@@ -32,3 +32,38 @@ document.addEventListener("DOMContentLoaded", function () {
     signC.style.display = "none";
   });
 });
+
+function myServerList() {
+  const myS = document.querySelector(".myListS");
+  const St = document.querySelector(".ch-list");
+
+  myS.innerHTML = "Show Server";
+  myS.addEventListener("click", function () {
+    St.classList.toggle("showServerL");
+  });
+}
+
+myServerList();
+
+function myStorageList() {
+  const myS = document.querySelector(".myStorageL");
+  const sT = document.querySelector(".storage-list");
+
+  myS.innerHTML = "Show Storage";
+  myS.addEventListener("click", function () {
+    sT.classList.toggle("showList");
+  });
+}
+
+myStorageList();
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    type: "loop",
+    autoplay: true,
+    pagination: false,
+    arrows: false,
+    gap: "10rem",
+  });
+  splide.mount();
+});

@@ -101,6 +101,10 @@ header a {
   background-color: var(--col-1);
 }
 
+.nav {
+  display: none;
+}
+
 nav {
   position: absolute;
   width: 13%;
@@ -260,6 +264,10 @@ nav a {
   margin-right: 15px;
 }
 
+.myListS {
+  display: none;
+}
+
 .chP {
   border-style: dashed;
   border-color: var(--col-4);
@@ -409,7 +417,10 @@ nav a {
   align-items: center;
   margin: 35px;
   gap: 20px;
-  flex-wrap: wrap;
+}
+
+.myStorageL {
+  display: none;
 }
 
 .sl-1,
@@ -462,6 +473,10 @@ nav a {
   margin: 12px 50px;
   align-items: center;
   gap: 40px;
+}
+
+#container {
+  display: block;
 }
 
 .card-review {
@@ -522,4 +537,182 @@ footer p {
   font-size: 12px;
   text-align: center;
   padding: 15px 0;
+}
+
+@media screen and (max-width: 750px) {
+  header a {
+    font-size: 20px;
+  }
+
+  .container {
+    z-index: 999;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: var(--col-3);
+    height: 100vh;
+    padding: 25px;
+    padding-top: 90px;
+    margin: 13px 8px;
+    border-radius: 30px;
+    gap: 20px;
+    width: 20px;
+    z-index: -9;
+  }
+
+  .nav img {
+    width: 50px;
+    position: absolute;
+    border-radius: 50px;
+    left: 10px;
+    right: 0;
+    top: 10px;
+  }
+
+  .nav a {
+    color: var(--col-2);
+  }
+
+  .bar {
+    position: absolute;
+    left: 32px;
+    top: 30px;
+  }
+
+  .container {
+    width: 76%;
+  }
+
+  .conta {
+    width: 100%;
+  }
+
+  .dash-1 {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 300px;
+    margin-left: 90px;
+  }
+
+  .info h1 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 7px;
+  }
+
+  .card-hardware {
+    flex-wrap: wrap;
+  }
+
+  .chP {
+    padding: 30px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .ch-list {
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    transition: height 1s ease-in-out;
+  }
+
+  .myListS {
+    font-family: var(--font-1);
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin-left: 10px;
+    background-color: var(--col-1);
+    color: var(--col-3);
+    font-size: 14px;
+    display: block;
+  }
+
+  .showServerL {
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  .ch-1 {
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-left: 12px;
+  }
+
+  .ch-1 h2 {
+    font-size: 15px;
+  }
+
+  .ch-info p {
+    font-size: 10px;
+  }
+
+  .storage-list {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 40px;
+    transition: height 1s ease-in-out;
+    position: relative;
+  }
+
+  .myStorageL {
+    background-color: var(--col-1);
+    padding: 10px 38px;
+    font-size: 14px;
+    border-radius: 30px;
+    color: var(--col-3);
+    font-family: var(--font-1);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    display: block;
+  }
+
+  .showList {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .sl-1 {
+    margin-top: 50px;
+  }
+
+  .dash2 {
+    flex-direction: column;
+  }
+
+  #container {
+    display: none;
+  }
+
+  .card-review {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    display: none;
+  }
+
+  .splide {
+    width: 100%;
+  }
 }
