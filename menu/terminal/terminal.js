@@ -20,3 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
     barTest.style.display = "flex";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const terminalContainer = document.getElementById("terminal");
+  const term = new window.Terminal({
+    cursorBlink: true,
+  });
+
+  term.open(terminalContainer);
+  term.write("node1/MainTen-Web# ");
+
+  term.onData((data) => {
+    console.log(data);
+  });
+});

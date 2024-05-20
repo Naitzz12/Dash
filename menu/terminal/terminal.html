@@ -68,6 +68,20 @@
           <p>13 : 25 : 50</p>
         </div>
       </nav>
+      <div class="nav" id="nav">
+        <a href="../settings/settings.html"
+          ><img class="profile-andro" src="../../assets/user1.png" alt=""
+        /></a>
+        <a href="terminal.html"><i class="fa-solid fa-terminal"></i></a>
+        <a href="../stats/stats.html"><i class="fa-solid fa-signal"></i></a>
+        <a href="../server/server.html"><i class="fa-solid fa-server"></i></a>
+        <a href="../settings/settings.html"
+          ><i class="fa-solid fa-gears"></i
+        ></a>
+        <a href="../storage/storage.html"
+          ><i class="fa-solid fa-hard-drive"></i
+        ></a>
+      </div>
       <div id="terminal"></div>
       <footer>
         <p>Created By &copy; NaItzz | 2022 - 2024</p>
@@ -75,20 +89,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
     <script src="./terminal.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const terminalContainer = document.getElementById("terminal");
-        const term = new window.Terminal({
-          cursorBlink: true,
-        });
-
-        term.open(terminalContainer);
-        term.write("node1/MainTen-Web# ");
-
-        term.onData((data) => {
-          console.log(data);
-        });
-      });
-    </script>
   </body>
 </html>

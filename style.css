@@ -539,13 +539,14 @@ footer p {
   padding: 15px 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
   header a {
     font-size: 20px;
   }
 
   .container {
     z-index: 999;
+    overflow-x: hidden;
   }
 
   nav {

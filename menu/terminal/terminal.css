@@ -225,3 +225,64 @@ footer p {
   text-align: center;
   padding: 15px 0;
 }
+
+@media screen and (max-width: 1050px) {
+  header a {
+    font-size: 20px;
+  }
+
+  .container {
+    z-index: 999;
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: var(--col-3);
+    height: 100vh;
+    padding: 25px;
+    padding-top: 90px;
+    margin: 13px 8px;
+    border-radius: 30px;
+    gap: 20px;
+    width: 20px;
+    z-index: -9;
+  }
+
+  .nav img {
+    width: 50px;
+    position: absolute;
+    border-radius: 50px;
+    left: 10px;
+    right: 0;
+    top: 10px;
+  }
+
+  .nav a {
+    color: var(--col-2);
+  }
+
+  .bar {
+    position: absolute;
+    left: 32px;
+    top: 30px;
+  }
+
+  .container {
+    width: 76%;
+  }
+
+  .conta {
+    width: 100%;
+  }
+}
