@@ -487,6 +487,10 @@ nav a {
   width: 900px;
 }
 
+.splide {
+  display: none;
+}
+
 .cr-list1,
 .cr-list2 {
   display: flex;
@@ -715,5 +719,6 @@ footer p {
 
   .splide {
     width: 100%;
+    display: block;
   }
 }
